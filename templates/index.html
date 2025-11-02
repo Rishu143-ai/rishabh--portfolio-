@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishabh Sanjay Dubey | Portfolio</title>
+  <meta name="description" content="Full-Stack Developer | HTML, CSS, JavaScript, Python, Flask,and Django." />
+  <meta name="keywords" content="Rishabh Dubey, Portfolio, Full-Stack Developer, Web Developer, Python Developer HTML, CSS, JavaScript, Flask, Django" />
+  <meta name="author" content="Rishabh Sanjay Dubey" />
+  <meta property="og:title" content="Rishabh Sanjay Dubey | Portfolio" />
+  <meta property="og:description" content="Full-Stack Developer | Passionate about crafting responsive web experiences." />
+  <meta property="og:image" content="https://rishu143-ai.github.io/rishabh-portfolio/your-image.jpeg" />
+  <meta property="og:url" content="https://rishu143-ai.github.io/rishabh-portfolio/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rishabh Sanjay Dubey | Portfolio" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+    }
+    .navbar-brand {
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #0d1117, #161b22);
+    }
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 3px solid #00ffcc;
+      box-shadow: 0 0 20px #00ffcc;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #00ffcc;
+      min-height: 3rem;
+    }
+    .hero p {
+      color: #ccc;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      color: #00ffcc;
+      margin-top: 80px;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+    .tech-icon {
+      font-size: 1.2rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.3s;
+    }
+    .tech-icon:hover {
+      transform: scale(1.1);
+    }
+    .project-card {
+      background: #161b22;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    }
+    .contact a {
+      color: #00ffcc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .contact a:hover {
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #0b0f14;
+      color: #888;
+      margin-top: 50px;
+    }
+    .animated {
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .form-control, .btn {
+      border-radius: 8px;
+    }
+    body.light-mode {
+      background-color: #f7f7f7;
+      color: #111;
+    }
+    body.light-mode nav {
+      background: rgba(255, 255, 255, 0.9);
+    }
+    body.light-mode .section-title {
+      color: #007bff;
+    }
+    body.light-mode .project-card {
+      background: #fff;
+      color: #000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+  background-color: #161b22;
+  border: 1px solid #00ffcc;
+  color: #fff;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+form input:focus, form textarea:focus {
+  box-shadow: 0 0 10px #00ffcc;
+  transform: scale(1.02);
+}
+form button {
+  background-color: #00ffcc;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+form button:hover {
+  background-color: #00e6b8;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rishabh Dubey</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <button id="theme-toggle" class="btn btn-outline-light ms-3">🌙</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <img src="your-image.jpeg" alt="Rishabh Dubey" />
+      <h1></h1>
+      <p>I’m a Computer Science graduate passionate about turning code into craft. I create responsive, dynamic, and human-centered digital experiences.</p>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="text-center">As a fresher in the IT sector, I bring a strong foundation in full-stack development—fluent in HTML, CSS, JavaScript, Bootstrap, SQL, Python, Automation, Flask, and Django. My approach blends technical precision with creative rhythm, building responsive websites that are both functional and emotionally engaging. </p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+      <div class="tech-icon" style="color:#e34c26;"><i class="fab fa-html5"></i> HTML5</div>
+      <div class="tech-icon" style="color:#264de4;"><i class="fab fa-css3-alt"></i> CSS3</div>
+      <div class="tech-icon" style="color:#f0db4f;"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="tech-icon" style="color:#563d7c;"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+      <div class="tech-icon" style="color:#3776ab;"><i class="fab fa-python"></i> Python</div>
+      <div class="tech-icon" style="color:#f29111;"><i class="fas fa-database"></i> SQL</div>
+      <div class="tech-icon" style="color:#000;"><i class="fas fa-code"></i> Flask/Django</div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="project-card">
+          <h4>🎵 Music Downloader</h4>
+          <p>A web app built using Saavn API to download songs easily. Designed a clean UI and integrated Flask for backend management. Used languages like HTML, CSS, and JavaScript for the frontend, and Python with Flask for the backend.</p>
+          <a href="https://github.com/rishu143-ai/music-downloader" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card">
+          <br>
+          <h4>📝 Pastebin Website for Copy & Paste</h4>
+          <p>A simple website for sharing text snippets. By using HTML, CSS, JavaScript, Python, Flask, and SQLite3. I created a user-friendly interface that allows users to easily copy and paste their text, code, and more.</p>
+          <a href="https://github.com/rishu143-ai/pastebin-clone" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="container contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="text-center">Feel free to reach out for collaborations or just a friendly hello!</p>
+    <div class="d-flex justify-content-center gap-4 mt-4">
+       <a href="tel:+919769428009" class="btn btn-outline-primary"><i class="fas fa-phone"></i> +91 9769428009</a>
+      <br>
+      <a href="mailto:rishabhd@gmail.com" class="btn btn-outline-primary"><i class="fas fa-envelope"></i> rishabhd193@gmail.com</a>
+      <br>
+      <a href="https://www.linkedin.com/in/rishabh-dubey-99a72724a" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
+      <br>
+      <a href="https://github.com/rishu143-ai" target="_blank" class="btn btn-outline-primary">GitHub</a>
+    </div>
+    <div class="mt-5">
+  <h4 class="text-center mb-4">Send a Message</h4>
+  <form action="https://api.web3forms.com/submit" method="POST" class="row g-3 justify-content-center">
+    <input type="hidden" name="access_key" value="51f81c2a-6547-4a41-8b62-162ed52ebc1f" />
+    
+    <div class="col-md-5">
+      <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+    </div>
+    
+    <div class="col-md-5">
+      <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+    </div>
+    
+    <div class="col-md-10">
+      <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+    </div>
+    
+    <div class="col-md-10 text-center">
+      <button type="submit" class="btn btn-primary px-5">Send</button>
+    </div>
+  </form>
+</div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Rishabh Sanjay Dubey. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>  
+    const roles = ["Full-Stack Developer", "Web Developer", "Python Developer", "Tech Enthusiast"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    const typingSpeed = 100;
+    const erasingSpeed = 50;
+    const delayBetweenRoles = 2000;
+    const roleElement = document.querySelector('.hero h1');
+
+    function typeRole() {
+      if (charIndex < roles[roleIndex].length) {
+        roleElement.textContent += roles[roleIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeRole, typingSpeed);
+      } else {
+        setTimeout(eraseRole, delayBetweenRoles);
+      }
+    }
+
+    function eraseRole() {
+      if (charIndex > 0) {
+        roleElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(eraseRole, erasingSpeed);
+      } else {
+        roleIndex = (roleIndex + 1) % roles.length;
+        setTimeout(typeRole, typingSpeed);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      if (roles.length) setTimeout(typeRole, delayBetweenRoles);
+    });
+
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    themeToggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      if(document.body.classList.contains('light-mode')) {
+        themeToggleBtn.textContent = '🌙';
+      } else {
+        themeToggleBtn.textContent = '☀️';
+      }
+    });
+  </script>
+</body>
+</html>
